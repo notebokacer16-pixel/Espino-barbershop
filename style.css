@@ -1,0 +1,627 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #111111;
+
+    border-bottom: 1px solid #292929;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+.nav a {
+    color: #bdbdbd;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.btn-reserva {
+    background: #ffffff;
+    color: #111111;
+
+    padding: 12px 22px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-reserva:hover {
+    background: #c9a227;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 7% 80px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #111111 0%,
+            #111111 45%,
+            rgba(17, 17, 17, 0.75) 70%,
+            rgba(17, 17, 17, 0.3) 100%
+        ),
+       url("../img/WhatsApp\ Image\ 2026-08-14\ at\ 20.37.39.jpeg");
+background-size: auto, 400px;
+background-position: center, 85% center;
+background-repeat: no-repeat;
+}
+
+.hero-contenido {
+    max-width: 650px;
+}
+
+.hero-subtitulo {
+    color: #c9a227;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 105px);
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero-texto {
+    max-width: 500px;
+
+    color: #b8b8b8;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-principal {
+    background: #ffffff;
+    color: #111111;
+
+    padding: 15px 28px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #c9a227;
+    color: #ffffff;
+}
+
+.btn-secundario {
+    border: 1px solid #666666;
+
+    padding: 15px 28px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-secundario:hover {
+    border-color: #ffffff;
+}
+
+
+/* =========================================
+   TÍTULOS DE SECCIÓN
+========================================= */
+
+.seccion-titulo {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.seccion-titulo p {
+    color: #c9a227;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.seccion-titulo h2 {
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.seccion-titulo span {
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #c9a227;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.servicios {
+    padding: 110px 7%;
+
+    background: #151515;
+}
+
+.servicios-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.servicio {
+    min-height: 320px;
+
+    padding: 30px;
+
+    border: 1px solid #292929;
+
+    background: #111111;
+
+    transition: 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+
+    border-color: #c9a227;
+}
+
+.servicio-numero {
+    color: #c9a227;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 55px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    color: #999999;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+.servicio strong {
+    font-size: 20px;
+}
+
+
+
+
+/* =========================================
+   RESERVA
+========================================= */
+
+.reserva {
+    padding: 110px 7%;
+
+    background: #181818;
+}
+
+.reserva-contenido {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.reserva-contenido > p:first-child {
+    color: #c9a227;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.reserva h2 {
+    font-size: 55px;
+
+    margin: 15px 0 45px;
+}
+
+#formReserva {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+#formReserva input,
+#formReserva select {
+    width: 100%;
+
+    padding: 16px;
+
+    background: #111111;
+
+    border: 1px solid #333333;
+
+    color: #ffffff;
+
+    outline: none;
+}
+
+#formReserva input:focus,
+#formReserva select:focus {
+    border-color: #c9a227;
+}
+
+#formReserva button {
+    grid-column: 1 / -1;
+
+    padding: 17px;
+
+    border: none;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#formReserva button:hover {
+    background: #c9a227;
+
+    color: #ffffff;
+}
+
+#mensaje {
+    margin-top: 20px;
+
+    color: #c9a227;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    padding: 50px 7%;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 40px;
+
+    background: #0c0c0c;
+
+    border-top: 1px solid #292929;
+}
+
+.footer h3 {
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .nav {
+        gap: 15px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        height: 70px;
+
+        padding: 0 5%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .btn-reserva {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        padding: 110px 5% 70px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-texto {
+        font-size: 15px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .seccion-titulo h2 {
+        font-size: 38px;
+    }
+
+    .servicios,
+    .reserva {
+        padding: 80px 5%;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .reserva h2 {
+        font-size: 42px;
+    }
+
+    #formReserva {
+        grid-template-columns: 1fr;
+    }
+
+    #formReserva button {
+        grid-column: auto;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+
+        padding: 40px 5%;
+    }
+
+}
+
+
+
+/* =========================================
+   BOTÓN FLOTANTE DE WHATSAPP
+========================================= */
+
+.whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    background: #25D366;
+    color: #ffffff;
+
+    padding: 14px 20px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+    z-index: 2000;
+
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: translateY(-5px);
+
+    background: #1ebe5d;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   BOTÓN FLOTANTE DE WHATSAPP
+========================================= */
+
+.whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #25D366;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+    z-index: 2000;
+
+    transition: 0.3s;
+}
+
+.whatsapp svg {
+    width: 32px;
+    height: 32px;
+
+    fill: currentColor;
+}
+
+.whatsapp:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    background: #1ebe5d;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   WHATSAPP - CELULAR
+========================================= */
+
+@media (max-width: 650px) {
+
+    .whatsapp {
+        right: 15px;
+        bottom: 15px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp svg {
+        width: 29px;
+        height: 29px;
+    }
+
+}
