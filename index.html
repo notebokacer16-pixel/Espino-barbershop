@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,24 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Barbershop</title>
+    <title>Espinola Barber Shop</title>
 
-    <!-- CONEXIÓN CON CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
     <header class="header">
 
         <div class="logo">
-            BARBERSHOP
+            <img
+                src="img/WhatsApp Image 2026-08-14 at 20.37.39.jpeg"
+                alt="Espinola Barber Shop"
+            >
         </div>
 
         <nav class="nav">
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
             <a href="#contacto">Contacto</a>
         </nav>
 
@@ -34,16 +39,18 @@
     </header>
 
 
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- PORTADA -->
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
         <section id="inicio" class="hero">
 
             <div class="hero-contenido">
 
                 <p class="hero-subtitulo">
-                    since 2024 - Capiibary
+                    SINCE 2024 - CAPIIBARY
                 </p>
 
                 <h1>
@@ -52,7 +59,7 @@
                 </h1>
 
                 <p class="hero-texto">
-                    Espinola Barber shop, donde
+                    Espinola Barber Shop, donde
                     perfeccionamos tu imagen.
                 </p>
 
@@ -73,107 +80,165 @@
         </section>
 
 
-        <!-- SERVICIOS -->
+        <!-- =========================================
+             SERVICIOS
+        ========================================== -->
+
         <section id="servicios" class="servicios">
 
             <div class="seccion-titulo">
 
                 <p>LO QUE HACEMOS</p>
 
-                <h2>
-                    Nuestros servicios
-                </h2>
+                <h2>Nuestros servicios</h2>
 
                 <span></span>
 
             </div>
 
+
             <div class="servicios-grid">
 
                 <article class="servicio">
 
-                    <div class="servicio-numero">
-                        01
-                    </div>
+                    <div class="servicio-numero">01</div>
 
-                    <h3>
-                        Corte clásico
-                    </h3>
+                    <h3>Corte Adulto</h3>
 
                     <p>
-                        Cortes tradicionales realizados con
-                        precisión y atención a cada detalle.
+                        Cortes realizados con precisión y atención
+                        a cada detalle.
                     </p>
 
-                    <strong>
-                        $15
-                    </strong>
+                    <strong>30.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Corte Adulto - 30.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
 
                 </article>
 
 
                 <article class="servicio">
 
-                    <div class="servicio-numero">
-                        02
-                    </div>
+                    <div class="servicio-numero">02</div>
 
-                    <h3>
-                        Corte moderno
-                    </h3>
+                    <h3>Corte Niño</h3>
 
                     <p>
-                        Estilos actuales adaptados a tu rostro
-                        y a tu personalidad.
+                        Atención personalizada para niños y precisión
+                        en cada corte.
                     </p>
 
-                    <strong>
-                        $18
-                    </strong>
+                    <strong>30.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Corte Niño - 30.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
 
                 </article>
 
 
                 <article class="servicio">
 
-                    <div class="servicio-numero">
-                        03
-                    </div>
+                    <div class="servicio-numero">03</div>
 
-                    <h3>
-                        Barba
-                    </h3>
+                    <h3>Marcación de barba</h3>
 
                     <p>
-                        Perfilado y cuidado de barba para
-                        conseguir un acabado impecable.
+                        Perfilado y cuidado de barba para conseguir
+                        un acabado impecable.
                     </p>
 
-                    <strong>
-                        $12
-                    </strong>
+                    <strong>15.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Marcación de barba - 15.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
 
                 </article>
 
 
                 <article class="servicio">
 
-                    <div class="servicio-numero">
-                        04
-                    </div>
+                    <div class="servicio-numero">04</div>
 
-                    <h3>
-                        Corte + barba
-                    </h3>
+                    <h3>Afeitado de barba</h3>
 
                     <p>
-                        El servicio completo para renovar
+                        Un servicio completo para renovar
                         completamente tu estilo.
                     </p>
 
-                    <strong>
-                        $25
-                    </strong>
+                    <strong>10.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Afeitado de barba - 10.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <div class="servicio-numero">05</div>
+
+                    <h3>Lavado</h3>
+
+                    <p>
+                        Cuidado y limpieza para dejar tu cabello
+                        limpio, suave y renovado.
+                    </p>
+
+                    <strong>10.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Lavado - 10.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <div class="servicio-numero">06</div>
+
+                    <h3>Cejas</h3>
+
+                    <p>
+                        Perfilado para alinear y completar
+                        tu estilo.
+                    </p>
+
+                    <strong>10.000₲</strong>
+
+                    <button
+                        type="button"
+                        class="btn-servicio"
+                        data-servicio="Cejas - 10.000₲"
+                    >
+                        Reservar este servicio
+                    </button>
 
                 </article>
 
@@ -182,70 +247,303 @@
         </section>
 
 
-        <!-- RESERVA -->
+        <!-- =========================================
+             GALERÍA
+        ========================================== -->
+
+        <section id="galeria" class="galeria">
+
+            <div class="seccion-titulo">
+
+                <p>NUESTRO TRABAJO</p>
+
+                <h2>Galería</h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="galeria-grid">
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte1.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte2.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte3.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte4.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte5.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="img/galeria/corte6.jpg"
+                        alt="Trabajo de Espinola Barber Shop"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             RESERVA
+        ========================================== -->
+
         <section id="reserva" class="reserva">
 
             <div class="reserva-contenido">
 
-                <p>
+                <p class="reserva-subtitulo">
                     ¿LISTO PARA TU PRÓXIMO CORTE?
                 </p>
 
-                <h2>
-                    Reserva tu cita
-                </h2>
+                <h2>Reserva tu cita</h2>
+
+                <p class="reserva-descripcion">
+                    Elige tu servicio, el día y horario
+                    que mejor te convenga.
+                </p>
+
 
                 <form id="formReserva">
 
-                    <input
-                        type="text"
-                        id="nombre"
-                        placeholder="Tu nombre"
-                        required
+                    <!-- NOMBRE -->
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Tu nombre completo"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TELÉFONO -->
+
+                    <div class="campo">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            placeholder="Ej: 0974 853 370"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SERVICIO -->
+
+                    <div class="campo campo-completo">
+
+                        <label for="servicio">
+                            ¿Qué servicio quieres?
+                        </label>
+
+                        <select id="servicio" required>
+
+                            <option value="">
+                                Selecciona un servicio
+                            </option>
+
+                            <option value="Corte Adulto - 30.000₲">
+                                Corte Adulto - 30.000₲
+                            </option>
+
+                            <option value="Corte Niño - 30.000₲">
+                                Corte Niño - 30.000₲
+                            </option>
+
+                            <option value="Marcación de barba - 15.000₲">
+                                Marcación de barba - 15.000₲
+                            </option>
+
+                            <option value="Afeitado de barba - 10.000₲">
+                                Afeitado de barba - 10.000₲
+                            </option>
+
+                            <option value="Lavado - 10.000₲">
+                                Lavado - 10.000₲
+                            </option>
+
+                            <option value="Cejas - 10.000₲">
+                                Cejas - 10.000₲
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         FECHA
+                    ====================================== -->
+
+                    <div class="campo campo-fecha campo-completo">
+
+                        <label>
+                            ¿Qué día quieres venir?
+                        </label>
+
+                        <div class="fecha-selectores">
+
+                            <div class="selector-fecha-individual">
+
+                                <span>Día</span>
+
+                                <select id="dia" required>
+
+                                    <option value="">
+                                        Día
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="selector-fecha-individual">
+
+                                <span>Mes</span>
+
+                                <select id="mes" required>
+
+                                    <option value="">
+                                        Mes
+                                    </option>
+
+                                    <option value="0">Enero</option>
+                                    <option value="1">Febrero</option>
+                                    <option value="2">Marzo</option>
+                                    <option value="3">Abril</option>
+                                    <option value="4">Mayo</option>
+                                    <option value="5">Junio</option>
+                                    <option value="6">Julio</option>
+                                    <option value="7">Agosto</option>
+                                    <option value="8">Septiembre</option>
+                                    <option value="9">Octubre</option>
+                                    <option value="10">Noviembre</option>
+                                    <option value="11">Diciembre</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="selector-fecha-individual">
+
+                                <span>Año</span>
+
+                                <select id="anio" required>
+
+                                    <option value="">
+                                        Año
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <small
+                            id="avisoFecha"
+                            class="aviso-fecha"
+                        >
+                            Selecciona el día, mes y año de tu visita.
+                        </small>
+
+                    </div>
+
+
+                    <!-- HORA -->
+
+                    <div class="campo campo-hora">
+
+                        <label for="hora">
+                            ¿A qué hora?
+                        </label>
+
+                        <div class="selector-hora">
+
+                            <span class="icono-hora">
+                                🕐
+                            </span>
+
+                            <select
+                                id="hora"
+                                required
+                                disabled
+                            >
+
+                                <option value="">
+                                    Selecciona primero una fecha
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <small>
+                            Atención: 08:00 - 11:00 y 13:00 - 17:00
+                        </small>
+
+                    </div>
+
+
+                    <!-- BOTÓN -->
+
+                    <button
+                        type="submit"
+                        id="btnReserva"
                     >
-
-                    <input
-                        type="tel"
-                        id="telefono"
-                        placeholder="Tu teléfono"
-                        required
-                    >
-
-                    <select id="servicio" required>
-
-                        <option value="">
-                            Selecciona un servicio
-                        </option>
-
-                        <option value="Corte clásico">
-                            Corte clásico
-                        </option>
-
-                        <option value="Corte moderno">
-                            Corte moderno
-                        </option>
-
-                        <option value="Barba">
-                            Barba
-                        </option>
-
-                        <option value="Corte + barba">
-                            Corte + barba
-                        </option>
-
-                    </select>
-
-                    <input
-                        type="date"
-                        id="fecha"
-                        required
-                    >
-
-                    <button type="submit">
-                        Reservar cita
+                        Reservar por WhatsApp
                     </button>
 
                 </form>
+
 
                 <p id="mensaje"></p>
 
@@ -256,13 +554,16 @@
     </main>
 
 
-    <!-- PIE DE PÁGINA -->
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
     <footer id="contacto" class="footer">
 
         <div>
 
             <h3>
-                BARBERSHOP
+                ESPINOLA BARBERSHOP
             </h3>
 
             <p>
@@ -271,26 +572,29 @@
 
         </div>
 
+
         <div>
 
-            <p>
-                Lunes - Sábado
-            </p>
+            <p>Lunes - Sábado</p>
 
-            <p>
-                09:00 - 19:00
-            </p>
+            <p>08:00 - 11:00</p>
+
+            <p>13:00 - 17:00</p>
 
         </div>
 
+
         <div>
 
-            <p>
-                +595 974 853 370
-            </p>
+            <p>+595 974 853 370</p>
 
             <p>
-                barbershop@email.com
+                <a
+                    href="mailto:espinolabarbershop@gmail.com"
+                    class="correo"
+                >
+                    espinolabarbershop@gmail.com
+                </a>
             </p>
 
         </div>
@@ -298,24 +602,90 @@
     </footer>
 
 
- <!-- BOTÓN FLOTANTE DE WHATSAPP -->
-<a
-    href="https://wa.me/595974853370?text=Hola%2C%20quiero%20consultar%20sobre%20los%20servicios%20de%20Espinola%20Barber%20Shop."
-    class="whatsapp"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
->
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l6.9-1.8c1.8 1 3.9 1.5 6.1 1.5 7.1 0 12.9-5.7 12.9-12.8S23.1 3 16 3zm0 23.5c-2 0-4-.5-5.7-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C4.9 9.9 9.9 5 16 5s11.1 4.9 11.1 10.9S22.1 26.5 16 26.5zm6.1-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.7.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.4z"/>
-    </svg>
-</a>
+    <!-- =========================================
+         INSTAGRAM
+    ========================================== -->
+
+    <a
+        href="https://www.instagram.com/espinola_barber_shop?igsh=OWt3aDExcm54Nmk="
+        class="instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visitar Instagram"
+    >
+
+        <svg viewBox="0 0 24 24">
+
+            <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                ry="5"
+            ></rect>
+
+            <circle
+                cx="12"
+                cy="12"
+                r="4"
+            ></circle>
+
+            <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+            ></circle>
+
+        </svg>
+
+    </a>
 
 
-    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <!-- =========================================
+         GOOGLE MAPS
+    ========================================== -->
+
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=-24.721480,-55.983230"
+        class="google-maps"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver ubicación en Google Maps"
+    >
+
+        <svg viewBox="0 0 24 24">
+
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+
+        </svg>
+
+    </a>
+
+
+    <!-- =========================================
+         WHATSAPP
+    ========================================== -->
+
+    <a
+        href="https://wa.me/595974853370?text=Hola%2C%20quiero%20consultar%20sobre%20los%20servicios%20de%20Espinola%20Barber%20Shop."
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+    >
+
+        <svg viewBox="0 0 32 32">
+
+            <path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l6.9-1.8c1.8 1 3.9 1.5 6.1 1.5 7.1 0 12.9-5.7 12.9-12.8S23.1 3 16 3zm0 23.5c-2 0-4-.5-5.7-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C4.9 9.9 9.9 5 16 5s11.1 4.9 11.1 10.9S22.1 26.5 16 26.5zm6.1-8.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.7.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.4z"/>
+
+        </svg>
+
+    </a>
+
+
     <script src="js/script.js"></script>
 
 </body>
 
 </html>
-```
